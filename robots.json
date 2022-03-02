@@ -1,0 +1,394 @@
+[
+    [
+      {
+        "id": "r1",
+        "name": "Winston",
+        "type": "Robot Mascota",
+        "work": "Compania",
+        "preview": "img/previa_r1.png",
+        "perfilImg": "img/r1.png",
+        "src": "img/robot_1.png",
+        "description": "Un compañero fiel con quién jugar. De carácter dócil y alegre, Winston estará a tu lado cuando lo necesites.",
+        "statistics": [
+          {
+            "energy": [
+              {
+                "value": 50,
+                "title": "Gasto Energético",
+                "description": "Winston controla su gasto de energía tomando pequeñas siestas mientras tu descansas. El gasto máximo puede llegar al 80% luego de una tarde jugando en el jardín, reservando el 20% para protegerte por las noches. Tiempo de carga de bateria (100%): 2hs."
+              }
+            ],
+            "maintenance": [
+              {
+                "value": 60,
+                "title": "Complejidad",
+                "description": "Mantenimiento moderado. Debes estar alerta de revisar con frecuencia sus ruedas y limpiar su superficie ya que le encanta escabullirse por donde sea."
+              }
+            ],
+            "complexity": [
+              {
+                "value": 25,
+                "title": "Complejidad",
+                "description": "es muy fácil de configurar. Sólo asegurate de activar el comando de voz para y él recibirá tus ordenes al instante."
+              }
+            ],
+            "security": [
+              {
+                "value": 100,
+                "title": "Seguridad",
+                "description": "es totalmente seguro para los integrantes de tu familia. Está diseñado para ser cariñoso y protector. Sus sensores detectan peligro, lo que lo convierte en una alarma ideal."
+              }
+            ],
+            "other": [
+              {
+                "batteryLife": [
+                  {
+                    "value": 72,
+                    "dashoffset": 240
+                  }
+                ],
+                "chargeTime": [
+                  {
+                    "value": 30,
+                    "dashoffset": 240
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "dataSheet": [
+          {
+            "size": [
+              {
+                "height": 70,
+                "width": 50,
+                "diameter": 50
+              }
+            ],
+            "items": [
+              "Ruedas reforzadas, resistentes a impactos.",
+              "Remaches seguros.",
+              "Pintura antioxidante, libre de tóxicos.",
+              "Pantalla LED blindada.",
+              "Sensores antichoques."
+            ],
+            "description": "Esta conformado por una única pieza de metal, revestida con acero. Sus esquinas redondeadas y terminaciones suaves garantizan una superficie segura. Su cola es intercambiable, puedes optar por quitarla o agregarle accesorios (disponibles en nuestra tienda)",
+            "operation": [
+              {
+                "title": "Funcionamiento",
+                "description": "Cuenta con un botón de encendido ubicado en la parte inferior. Al presionarlo comenzará a funcionar con simples instrucciones. Consulta la guía para activar todos los comandos."
+              }
+            ],
+            "Accesorios": [
+              "Control Remoto",
+              "Correa extensible",
+              "Su juguete favorito “Mummy”",
+              "Calcomanías"
+            ]
+          }
+        ],
+        "advice": [
+          "Activar el comando de voz en el primer encendido simplificará su configuración, ya que Winston seguirá sus ordenes al instante y lo ayudará con los pasos de la instalación.",
+          "Cargar el dispositivo al menos 2 hs. antes de la primer configuración. Winston funcionará alrededor de 72 hs. con una sola carga, pero aconsejamos conectar su batería a la eléctricidad durante al menos 30 minutos diarios para garantizar la ejecución de todas sus funciones.",
+          "Winston tiene una función de alarma que puede activarse mediante control remoto.",
+          "Vincular a todos los integrantes de su familia con el comando de voz, rango de edad y sexo garantiza exactitud en el comportamiento y adaptabilidad de Winston con cada uno de los individuos.",
+          "Descargar el manual de usuario"
+        ]
+      }
+    ],
+    [
+      {
+        "id": "r2",
+        "name": "Lady Beth",
+        "type": "Tu niñera Favorita",
+        "work": "Cuidado de humanos y mascotas",
+        "preview": "img/previa_r2.png",
+        "perfilImg": "img/r2.png",
+        "src": "img/robot_2.png",
+        "description": "Delicada y carinosa, cuidara de todos los miembros de la familia las 24 hs.",
+        "statistics": [
+          {
+            "energy": [
+              {
+                "value": 95,
+                "title": "Gasto Energético",
+                "description": "Winston controla su gasto de energía tomando pequeñas siestas mientras tu descansas. El gasto máximo puede llegar al 80% luego de una tarde jugando en el jardín, reservando el 20% para protegerte por las noches. Tiempo de carga de bateria (100%): 2hs."
+              }
+            ],
+            "maintenance": [
+              {
+                "value": 10,
+                "title": "Complejidad",
+                "description": "Mantenimiento moderado. Debes estar alerta de revisar con frecuencia sus ruedas y limpiar su superficie ya que le encanta escabullirse por donde sea."
+              }
+            ],
+            "complexity": [
+              {
+                "value": 80,
+                "title": "Complejidad",
+                "description": "es muy fácil de configurar. Sólo asegurate de activar el comando de voz para y él recibirá tus ordenes al instante."
+              }
+            ],
+            "security": [
+              {
+                "value": 30,
+                "title": "Seguridad",
+                "description": "es totalmente seguro para los integrantes de tu familia. Está diseñado para ser cariñoso y protector. Sus sensores detectan peligro, lo que lo convierte en una alarma ideal."
+              }
+            ],
+            "other": [
+              {
+                "batteryLife": [
+                  {
+                    "value": 99,
+                    "dashoffset": 240
+                  }
+                ],
+                "chargeTime": [
+                  {
+                    "value": 30,
+                    "dashoffset": 170
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "dataSheet": [
+          {
+            "size": [
+              {
+                "height": 70,
+                "width": 50,
+                "diameter": 50
+              }
+            ],
+            "items": [
+              "Ruedas reforzadas, resistentes a impactos.",
+              "Remaches seguros.",
+              "Pintura antioxidante, libre de tóxicos.",
+              "Pantalla LED blindada.",
+              "Sensores antichoques."
+            ],
+            "description": "Esta conformado por una única pieza de metal, revestida con acero. Sus esquinas redondeadas y terminaciones suaves garantizan una superficie segura. Su cola es intercambiable, puedes optar por quitarla o agregarle accesorios (disponibles en nuestra tienda)",
+            "operation": [
+              {
+                "title": "Funcionamiento",
+                "description": "Cuenta con un botón de encendido ubicado en la parte inferior. Al presionarlo comenzará a funcionar con simples instrucciones. Consulta la guía para activar todos los comandos."
+              }
+            ],
+            "Accesorios": [
+              "Control Remoto",
+              "Correa extensible",
+              "Su juguete favorito “Mummy”",
+              "Calcomanías"
+            ]
+          }
+        ],
+        "advice": [
+          "Activar el comando de voz en el primer encendido simplificará su configuración, ya que Winston seguirá sus ordenes al instante y lo ayudará con los pasos de la instalación.",
+          "Cargar el dispositivo al menos 2 hs. antes de la primer configuración. Winston funcionará alrededor de 72 hs. con una sola carga, pero aconsejamos conectar su batería a la eléctricidad durante al menos 30 minutos diarios para garantizar la ejecución de todas sus funciones.",
+          "Winston tiene una función de alarma que puede activarse mediante control remoto.",
+          "Vincular a todos los integrantes de su familia con el comando de voz, rango de edad y sexo garantiza exactitud en el comportamiento y adaptabilidad de Winston con cada uno de los individuos.",
+          "Descargar el manual de usuario"
+        ]
+      }
+    ],
+    [
+      {
+        "id": "r3",
+        "name": "Chef Steve",
+        "type": "Chef 24/7",
+        "work": "Cocina y manipulacion de alimentos ",
+        "preview": "img/previa_r1.png",
+        "perfilImg": "img/r3.png",
+        "src": "img/robot_1.png",
+        "description": "Un chef 5 estrellas a tu disposicion las 24 hs. Disfruta de platillos exquisitos hechos a medida.",
+        "statistics": [
+          {
+            "energy": [
+              {
+                "value": 90,
+                "title": "Gasto Energético",
+                "description": "Steve controla su gasto de energía tomando pequeñas siestas mientras tu descansas. El gasto máximo puede llegar al 80% luego de una tarde jugando en el jardín, reservando el 20% para protegerte por las noches. Tiempo de carga de bateria (100%): 2hs."
+              }
+            ],
+            "maintenance": [
+              {
+                "value": 70,
+                "title": "Complejidad",
+                "description": "Mantenimiento moderado. Debes estar alerta de revisar con frecuencia sus ruedas y limpiar su superficie ya que le encanta escabullirse por donde sea."
+              }
+            ],
+            "complexity": [
+              {
+                "value": 70,
+                "title": "Complejidad",
+                "description": "es muy fácil de configurar. Sólo asegurate de activar el comando de voz para y él recibirá tus ordenes al instante."
+              }
+            ],
+            "security": [
+              {
+                "value": 95,
+                "title": "Seguridad",
+                "description": "es totalmente seguro para los integrantes de tu familia. Está diseñado para ser cariñoso y protector. Sus sensores detectan peligro, lo que lo convierte en una alarma ideal."
+              }
+            ],
+            "other": [
+              {
+                "batteryLife": [
+                  {
+                    "value": 50,
+                    "dashoffset": 240
+                  }
+                ],
+                "chargeTime": [
+                  {
+                    "value": 50,
+                    "dashoffset": 240
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "dataSheet": [
+          {
+            "size": [
+              {
+                "height": 70,
+                "width": 50,
+                "diameter": 50
+              }
+            ],
+            "items": [
+              "Ruedas reforzadas, resistentes a impactos.",
+              "Remaches seguros.",
+              "Pintura antioxidante, libre de tóxicos.",
+              "Pantalla LED blindada.",
+              "Sensores antichoques."
+            ],
+            "description": "Esta conformado por una única pieza de metal, revestida con acero. Sus esquinas redondeadas y terminaciones suaves garantizan una superficie segura. Su cola es intercambiable, puedes optar por quitarla o agregarle accesorios (disponibles en nuestra tienda)",
+            "operation": [
+              {
+                "title": "Funcionamiento",
+                "description": "Cuenta con un botón de encendido ubicado en la parte inferior. Al presionarlo comenzará a funcionar con simples instrucciones. Consulta la guía para activar todos los comandos."
+              }
+            ],
+            "Accesorios": [
+              "Control Remoto",
+              "Correa extensible",
+              "Su juguete favorito “Mummy”",
+              "Calcomanías"
+            ]
+          }
+        ],
+        "advice": [
+          "Activar el comando de voz en el primer encendido simplificará su configuración, ya que Winston seguirá sus ordenes al instante y lo ayudará con los pasos de la instalación.",
+          "Cargar el dispositivo al menos 2 hs. antes de la primer configuración. Winston funcionará alrededor de 72 hs. con una sola carga, pero aconsejamos conectar su batería a la eléctricidad durante al menos 30 minutos diarios para garantizar la ejecución de todas sus funciones.",
+          "Winston tiene una función de alarma que puede activarse mediante control remoto.",
+          "Vincular a todos los integrantes de su familia con el comando de voz, rango de edad y sexo garantiza exactitud en el comportamiento y adaptabilidad de Winston con cada uno de los individuos.",
+          "Descargar el manual de usuario"
+        ]
+      }
+    ],
+    [
+      {
+        "id": "r4",
+        "name": "Super",
+        "type": "Tu hogar brillara con su presencia",
+        "work": "Limpieza del hogar",
+        "preview": "img/previa_r1.png",
+        "perfilImg": "img/r1.png",
+        "src": "img/robot_1.png",
+        "description": "No mas tareas indeseadas! Super se encargara de mantener tu casa libre de suciedad.",
+        "statistics": [
+          {
+            "energy": [
+              {
+                "value": 60,
+                "title": "Gasto Energético",
+                "description": "Winston controla su gasto de energía tomando pequeñas siestas mientras tu descansas. El gasto máximo puede llegar al 80% luego de una tarde jugando en el jardín, reservando el 20% para protegerte por las noches. Tiempo de carga de bateria (100%): 2hs."
+              }
+            ],
+            "maintenance": [
+              {
+                "value": 60,
+                "title": "Complejidad",
+                "description": "Mantenimiento moderado. Debes estar alerta de revisar con frecuencia sus ruedas y limpiar su superficie ya que le encanta escabullirse por donde sea."
+              }
+            ],
+            "complexity": [
+              {
+                "value": 60,
+                "title": "Complejidad",
+                "description": "es muy fácil de configurar. Sólo asegurate de activar el comando de voz para y él recibirá tus ordenes al instante."
+              }
+            ],
+            "security": [
+              {
+                "value": 100,
+                "title": "Seguridad",
+                "description": "es totalmente seguro para los integrantes de tu familia. Está diseñado para ser cariñoso y protector. Sus sensores detectan peligro, lo que lo convierte en una alarma ideal."
+              }
+            ],
+            "other": [
+              {
+                "batteryLife": [
+                  {
+                    "value": 100,
+                    "dashoffset": 240
+                  }
+                ],
+                "chargeTime": [
+                  {
+                    "value": 100,
+                    "dashoffset": 240
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "dataSheet": [
+          {
+            "size": [
+              {
+                "height": 70,
+                "width": 50,
+                "diameter": 50
+              }
+            ],
+            "items": [
+              "Ruedas reforzadas, resistentes a impactos.",
+              "Remaches seguros.",
+              "Pintura antioxidante, libre de tóxicos.",
+              "Pantalla LED blindada.",
+              "Sensores antichoques."
+            ],
+            "description": "Esta conformado por una única pieza de metal, revestida con acero. Sus esquinas redondeadas y terminaciones suaves garantizan una superficie segura. Su cola es intercambiable, puedes optar por quitarla o agregarle accesorios (disponibles en nuestra tienda)",
+            "operation": [
+              {
+                "title": "Funcionamiento",
+                "description": "Cuenta con un botón de encendido ubicado en la parte inferior. Al presionarlo comenzará a funcionar con simples instrucciones. Consulta la guía para activar todos los comandos."
+              }
+            ],
+            "Accesorios": [
+              "Control Remoto",
+              "Correa extensible",
+              "Su juguete favorito “Mummy”",
+              "Calcomanías"
+            ]
+          }
+        ],
+        "advice": [
+          "Activar el comando de voz en el primer encendido simplificará su configuración, ya que Winston seguirá sus ordenes al instante y lo ayudará con los pasos de la instalación.",
+          "Cargar el dispositivo al menos 2 hs. antes de la primer configuración. Winston funcionará alrededor de 72 hs. con una sola carga, pero aconsejamos conectar su batería a la eléctricidad durante al menos 30 minutos diarios para garantizar la ejecución de todas sus funciones.",
+          "Winston tiene una función de alarma que puede activarse mediante control remoto.",
+          "Vincular a todos los integrantes de su familia con el comando de voz, rango de edad y sexo garantiza exactitud en el comportamiento y adaptabilidad de Winston con cada uno de los individuos.",
+          "Descargar el manual de usuario"
+        ]
+      }
+    ]
+  ]
