@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilos-pruebas.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    
+    <div class="back">
+        <i id="backBtn" class='bx bx-arrow-back' ></i>
+    </div>
+    
+    <div id="perfilRobot" class="section">
+        <!-- insertar contenido javaScript -->
+          <div class="circle__container__img trans">
+                <img id="avatarRobot" class="image__robot" alt="robot">
+            </div>
+            
+            <div class ="text__robot__slider">
+                <h2 id="avatarName" class="robot__name title"></h2>
+                <h3 id="avatarType" class="s__work"></h3>
+                <p id="avatarDescription" class="description__text"></p>
+            </div>
+            
+        </div>
+        
+        <div id="tabs" class="tabs">
+            <div class="tabs__container">
+                <div id="tabControl" class="tab__controls">
+                    <div id="tabStadistics" class="tab tab__active">Estadísticas</div>
+                    <div id="tabDataSheet" class="tab ">Ficha</div>
+                    <div id="tabAdvices" class="tab">Consejos</div>
+                </div>
+                
+                <div id="tabBody" class="tab__body">
+                    <div id="bodyContentActive" class="tab__content__active">
+                        <!-- insertar contenido js -->
+                        <div id="stadisticsItems" class="stadistics__items">
+                            
+                            <div class="bar__item" id="energyBar">
+                                <p>Energia</p>
+                                <div class="bar__color">
+                                    <div id="barBlue" class="clr"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="bar__item" id="maintenanceBar">
+                                  <p>Mantenimiento</p>
+                                  <div class="bar__color">
+                                      <div id="barPink" class="clr"></div>
+                                    </div>
+                            </div>
+                            
+                            <div class="bar__item" id="complexBar">
+                                <p>Complejidad</p>
+                                  <div class="bar__color">
+                                      <div id= "barOrange" class="clr"></div>
+                                  </div>
+                                </div>
+                                
+                                <div class="bar__item" id="securityBar">
+                                    <p>Seguridad</p>
+                                  <div class="bar__color">
+                                      <div id="barGreen" class="clr"></div>
+                                    </div>
+                                </div>
+                                
+                            <div class="time__items">
+                                <div class="circle__content">
+                                    <!-- <div class="text__circle">
+                                              <span>Uso máximo de 1 carga</span>
+                                              <span id="avatarCarga" class="number">75</span>
+                                             <span>HORAS</span>
+                                          </div> -->
+                                    <svg width="170px" height="170px" xmlns="http://www.w3.org/2000/svg" version="1.1"> 
+                                        <circle viewbox="0 0 100 100" class="circle__main"cx="70" cy="70" r="40"></circle>
+                                        <circle viewbox="0 0 100 100" class="progress__circle batteryLife"cx="70" cy="70" r="40"></circle>
+                                            <defs>
+                                                  <linearGradient id="gradient1">
+                                                      <stop offset="0%" stop-color="#7AD3FF" />
+                                                      <stop offset="100%" stop-color="#11AFFF" />
+                                                    </linearGradient>
+                                            </defs>
+                                    </svg>
+                                </div>
+                                        
+                                <div class="circle__content">
+                                    <div class="text__circle">
+                                        <span>Uso máximo de 1 carga</span>
+                                        <span id="chargeTimeNumb" class="number"></span>
+                                        <span>HORAS</span>
+                                    </div>
+                                    <svg width="170px" height="170px" xmlns="http://www.w3.org/2000/svg" version="1.1"> 
+                                        <circle viewbox="0 0 100 100" class="circle__main"cx="70" cy="70" r="40"></circle>
+                                        <circle viewbox="0 0 100 100" class="progress__circle chargeTime"cx="70" cy="70" r="40"></circle>
+                                            <defs>
+                                                <linearGradient id="gradient2">
+                                                    <stop offset="0%" stop-color="#DD486B" />
+                                                    <stop offset="100%" stop-color="#FB93AC" />
+                                                </linearGradient>
+                                            </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                                      
+                        </div>
+                        
+                    </div>
+                    
+                                
+                </div>
+            </div>
+       
+        </div>
+        
+        <div class="hire__robot section">
+            <h3>¿Es lo que estás buscando?</h3>
+        <btn class=" btn fill__btn fill__blue">Contratar a Winston</btn>
+    </div>
+</body>
+</html>

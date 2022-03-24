@@ -16,6 +16,10 @@
     /* ---- padding ----- */
     --pd-movil: 2rem;
 
+/* ----- border ------- */
+
+    --table-border: 0.06rem solid #fff;
+
 
 /* ----------------- PALETA ----------------- */
 

@@ -3,8 +3,8 @@ let header = document.getElementById("header");
 let main = document.getElementById("main");
 let indiceRobot = 0;
 const navMenu = document.getElementById("nav-menu"),
-  navToggle = document.getElementById("nav-toggle"),
-  navClose = document.getElementById("nav-close");
+      navToggle = document.getElementById("nav-toggle"),
+      navClose = document.getElementById("nav-close");
 
 //mostrar menu
 if (navToggle) {
@@ -32,43 +32,13 @@ const planes = {
   ],
 };
 
-// MANIANA TOCA ESTA PARTE
-
-// tabs.forEach((tab) => {
-//   tab.addEventListener("click", (e) => {
-//     const target = e.currentTarget;
-//     const adviceItems = document.querySelector("adviceItems");
-//     console.log(target);
-
-//     if (target.id == "tabConsejos") {
-//       console.log("entre a consejos");
-//       stadisticsItems.style.display = "hidden";
-//       crearConsejos();
-//     }
-//     if (target.id == "tabEstadisticas") {
-//       console.log("entro en estadisticas");
-//       adviceItems.style.display = "hidden";
-//       // crearEstadisticas(robots)
-//     }
-//     if (target.id == "tabFicha") {
-//       console.log("entre a ficha");
-//     }
-
-//     target.classList.add("tab__active");
-//     const arrayHermanos = tabs.filter((tab) => tab.id != target.id);
-//     arrayHermanos.forEach((tab) => {
-//       tab.classList.remove("tab__active");
-//       // insertarConsejos()
-//     });
-//   });
-// });
-
 //ESTA FUNCION CARGA EL HOME APENAS SE CARGA LA WEB EJECUTA EL HOME Y EL ROBOT
-window.addEventListener("load", async () => {
+window.addEventListener("DOMContentLoaded", async () => { 
   let paginaInicial = await cargarPagina("home");
   main.innerHTML = paginaInicial;
   crearSliderRobot();
   crearTablaDePrecios();
+  menuHam()
 
   window.addEventListener("click", async (e) => {
     switch (e.target.id) {
@@ -86,3 +56,6 @@ window.addEventListener("load", async () => {
     }
   });
 });
+
+
+

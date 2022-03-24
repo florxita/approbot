@@ -1,116 +1,158 @@
+<html>
+<body>
 <section class="section" id="sectionPerfilRobots">
-  <div class="back">
+        <div class="back">
           <i id="backBtn" class='bx bx-arrow-back' ></i>
-  </div>
+        </div>
 
-      <div id="perfilRobot" class="section">
+        <div id="perfilRobot" class="section">
           <!-- insertar contenido javaScript -->
-          
-              <div class="circle__container__img trans">
+            <div class="circle__container__img trans">
                   <img id="avatarRobot" class="image__robot" alt="robot">
-              </div>
-                     <div class ="text__robot__slider">
-                         <h2 id="avatarName" class="robot__name title"></h2>
-                         <h3 id="avatarType" class="s__work"></h3>
-                         <p id="avatarDescription" class="description__text"></p>
-                     </div>
+            </div>
+
+            <div class ="text__robot__slider">
+                <h2 id="avatarName" class="robot__name title"></h2>
+                <h3 id="avatarType" class="s__work"></h3>
+                <p id="avatarDescription" class="description__text"></p>
+            </div>
          
-      </div>
+        </div>
+      
+        <div id="tabs" class="tabs">
 
-      <div id="tabs" class="tabs">
-          <div class="tabs__container">
-              <div id="tabControl" class="tab__controls">
+            <div class="tabs__container">
+                <div id="tabControl" class="tab__controls">
                   <div id="tabStadistics" class="tab tab__active">Estadísticas</div>
-                  <div id="tabDataSheet" class="tab">Ficha</div>
+                  <div id="tabDataSheet" class="tab ">Ficha</div>
                   <div id="tabAdvices" class="tab">Consejos</div>
-              </div>
+                </div>
               
-              <div id="tabBody" class="tab__body">
-                  <div id="bodyContentActive" class="tab__content__active">
-                          <!-- insertar contenido js -->
-                          <div id="stadisticsItems" class="stadistics__items">
-                              <div class="bar__item" id="energyBar">
-                                  <p>Energia</p>
-                                  <div class="bar__color">
-                                      <div id="barBlue" class="clr"></div>
-                                  </div>
-                                  <div> </div>
-                              </div>
-              
-                              <div class="bar__item" id="maintenanceBar">
-                                  <p>Mantenimiento</p>
-                                  <div class="bar__color">
-                                      <div id="barPink" class="clr"></div>
-                                  </div>
-                              </div>
-              
-                              <div class="bar__item" id="complexBar">
-                                  <p>Complejidad</p>
-                                  <div class="bar__color">
-                                      <div id= "barOrange" class="clr"></div>
-                                  </div>
-                              </div>
-              
-                              <div class="bar__item" id="securityBar">
-                                  <p>Seguridad</p>
-                                  <div class="bar__color">
-                                      <div id="barGreen" class="clr"></div>
-                                  </div>
-                              </div>
-              
-                             <div class="time__items">
-                                  <div class="circle__load">
-                                       <div class="text__circle">
-                                             <span>Uso máximo de 1 carga</span>
-                                             <span id="avatarCarga" class="number"></span>
-                                             <span>HORAS</span>
-                                       </div>
-                                       <svg class="circ__main"
-                                            xmlns="http://www.w3.org/2000/svg"version="1.1" width="7rem" height="7rem" viewBox="0 0 90 90">
-                                            <circle cx="50%" cy="50%" r="40" stroke="#1B262C" stroke-linecap="round"/> 
-                                       </svg>
-                                       <svg class="circle__color"
-                                           xmlns="http://www.w3org/2000/svg" version="1.1" width="7rem" height="7rem"viewBox="0 0 90 90">
-                                           <defs>
-                                               <linearGradient id="gradient1">
-                                                   <stop offset="0%" stop-color="#7AD3FF" />
-                                                   <stop offset="100%" stop-color="#11AFFF" />
-                                               </linearGradient>
-                                           </defs>
-                                           <circle class="progress__circle batteryLife" cx="50%" cy="50%" r="40" stroke-linecap="round"/>
-                                       </svg>             
-                                  </div>
-                                  <div class="circle__load">
-                                      <div class="text__circle">
-                                            <span>Tiempo de carga</span>
-                                            <span id="chargeTimeNumb" class="number"></span>
-                                            <span>MINUTOS</span>
-                                      </div>
-                                      <svg class="circ__main"
-                                           xmlns="http://www.w3.org/2000/svg"version="1.1" width="7rem" height="7rem" viewBox="0 0 90 90">
-                                           <circle cx="50%" cy="50%" r="40" stroke="#1B262C" stroke-linecap="round"/> 
-                                      </svg>
-                                      <svg id="#chargeTime" class="circle__color"
-                                          xmlns="http://www.w3org/2000/svg" version="1.1" width="7rem" height="7rem"viewBox="0 0 90 90">
-                                          <defs>
-                                              <linearGradient id="gradient2">
-                                                  <stop offset="0%" stop-color="#DD486B" />
-                                                  <stop offset="100%" stop-color="#FB93AC" />
-                                              </linearGradient>
-                                          </defs>
-                                          <circle class="progress__circle chargeTime" cx="50%" cy="50%" r="40" stroke-linecap="round"/>
-                                      </svg>             
-                                  </div>
-                                  
-                              </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
+                <div id="tabBody" class="tab__body">
 
-      <div class="hire__robot section">
-          <h3>¿Es lo que estás buscando?</h3>
-          <btn class=" btn fill__btn fill__blue">Contratar a Winston</btn>
-      </div>   
+                    <div id="bodyContentActive">
+                          
+                        <div id="stadisticsItems" class="flex__active">
+
+                                    <div class="bar__item" id="energyBar">
+                                        <p>Energia</p>
+                                        <div class="bar__color">
+                                            <div id="barBlue" class="clr"></div>
+                                        </div>
+                                    </div>
+              
+                                    <div class="bar__item" id="maintenanceBar">
+                                        <p>Mantenimiento</p>
+                                        <div class="bar__color">
+                                            <div id="barPink" class="clr"></div>
+                                        </div>
+                                    </div>
+              
+                                    <div class="bar__item" id="complexBar">
+                                        <p>Complejidad</p>
+                                        <div class="bar__color">
+                                            <div id= "barOrange" class="clr"></div>
+                                        </div>
+                                    </div>
+              
+                                    <div class="bar__item" id="securityBar">
+                                        <p>Seguridad</p>
+                                        <div class="bar__color">
+                                            <div id="barGreen" class="clr"></div>
+                                        </div>
+                                    </div>
+              
+                                    <div class="time__items">
+                                        <div class="circle__content">
+                                                
+                                            <div class="text__circle">
+                                                <span>Uso máximo de 1 carga</span>
+                                                <span id="avatarCarga" class="number"></span>
+                                               <span>HORAS</span>
+                                            </div>
+                                            <svg viewBox="0 0 100 100" xmlns="http://www.w3org/2000/svg" version="1.1"> 
+                                                <circle class="circle__main"cx="45" cy="45" r="40"></circle>
+                                                <circle class="progress__circle batteryLife"cx="45" cy="45" r="40"></circle>
+                                                <defs>
+                                                    <linearGradient id="gradient1">
+                                                        <stop offset="0%" stop-color="#7AD3FF" />
+                                                        <stop offset="100%" stop-color="#11AFFF" />
+                                                    </linearGradient>
+                                                </defs>
+                                                
+                                            </svg>
+                                        
+                                        <div>
+                                        </div> 
+                                        </div>
+                                        <div class="circle__content">
+                                         <div class="text__circle">
+                                                <span>Tiempo de carga</span>
+                                                <span id="chargeTimeNumb" class="number"></span>
+                                                <span>MINUTOS</span>
+                                        </div>
+                                        <svg viewBox="0 0 100 100" xmlns="http://www.w3org/2000/svg" version="1.1"> 
+                                            <circle class="circle__main"cx="45" cy="45" r="40"></circle>
+                                            <circle class="progress__circle chargeTime"cx="45" cy="45" r="40"></circle>
+                                            <defs>
+                                                <linearGradient id="gradient2">
+                                                    <stop offset="0%" stop-color="#DD486B" />
+                                                    <stop offset="100%" stop-color="#FB93AC" />
+                                                </linearGradient>
+                                            </defs>
+                                            
+                                        </svg>
+                                        
+
+                                        </div>   
+                                    </div>
+
+                        </div>
+
+                        <div id="dataSheet" class="inactive">
+                            <div class="table">
+                                <div class="table__content">   
+                                        <div class="title__table">
+                                            <h4>TAMAÑO</h4>
+                                        </div>
+    
+                                        <div class="size">
+                                            <ul id="listSize">
+                                            </ul>
+                                        </div>
+    
+                                        <ul id="listTable">
+                                                <!-- <li>Ruedas reforzadas, resistentes a impactos.</li>
+                                                <li>Remaches seguros.</li>
+                                                <li>Pintura antioxidante, libre de tóxicos.</li>
+                                                <li>Pantalla LED blindada.</li>
+                                                <li>Sensores antichoques.</li> -->
+                                        </ul> 
+                                    </div>
+                            </div>
+    
+                            <section id="dataSheetText" class="datasheet__text">
+                            </section>
+                        </div>
+
+                        <div id="advice" class="inactive">
+                            <ul id="adviceList" class="advice__list">
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    <div class="hire__robot section">
+        <h3>¿Es lo que estás buscando?</h3>
+        <btn class=" btn fill__btn fill__blue">Contratar a Winston</btn>
+    </div>
+
 </section>
+</body>
+</html>
