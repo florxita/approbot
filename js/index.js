@@ -18,19 +18,55 @@ if (navClose) {
   });
 }
 
+/** PLANES OBJETO  *********************************************  */
 const planes = {
+  title: "Plan Mensual",
+  anualPrice: 6000,
+  mensualPrice: 6000,
+  items: [
+    "Control Remoto y Accesorios",
+    "Asistencia Técnica Virtual 24/7",
+    "Cobertura 20% en daños de la unidad",
+    "Beneficios Socio Robot",
+  ],
+  title: "Plan Trimestral",
+  anualPrice: 15500,
+  mensualPrice: 5166,
+  items: [
+    "Control Remoto y Accesorios",
+    "Cobertura 40% en daños de la unidad",
+    "Asistencia Técnica Virtual 24/7",
+    "Mantenimiento mensual con 50% de descuento",
+    "Beneficios Socio Robot",
+    "Descuentos exclusivos en tiendas asociadas",
+  ],
+  title: "Plan Semestral",
+  anualPrice: 25200,
+  mensualPrice: 4200,
+  items: [
+    "Control Remoto y Accesorios",
+    "Cobertura 60% en daños de la unidad",
+    "Asistencia Técnica Virtual 24/7",
+    "Mantenimiento mensual sin cargo",
+    "Elección de color de pintura",
+    "Beneficios Socio Robot",
+    "Descuentos en tiendas asociadas",
+  ],
   title: "Plan Anual",
-  anualPrice: 60000,
-  mensualPrice: 5000,
+  anualPrice: 47000,
+  mensualPrice: 3916,
   items: [
     "Control Remoto y Accesorios",
     "Cobertura 100% en daños de la unidad",
     "Asistencia Técnica Virtual 24/7",
     "Mantenimiento mensual sin cargo",
-    "Elección de Color de pintura",
+    "Elección de color de pintura y apariencia",
     "Beneficios Socio Robot",
+    "Descuentos en tiendas asociadas",
   ],
+  
 };
+/** ***********************************************************************  */
 
 //ESTA FUNCION CARGA EL HOME APENAS SE CARGA LA WEB EJECUTA EL HOME Y EL ROBOT
 window.addEventListener("DOMContentLoaded", async () => { 
@@ -56,6 +92,4 @@ window.addEventListener("DOMContentLoaded", async () => {
     }
   });
 });
-
-
 

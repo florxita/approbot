@@ -1,7 +1,5 @@
 // const e = require("express");
 
-// const e = require("express");
-
 // ESTA FUNCION FETCH LLAMA AL ARCHIVO QUE SE NECESITE REEMPLAZAR EN EL HTML MAIN
 const cargarPagina = (pagina) => {
   let archivoHtml = `${pagina}.html`;
@@ -12,8 +10,6 @@ const cargarPagina = (pagina) => {
 
 /**
  * Para cargar la pagina: ejecutar cargarPagina y guardar el resultado en una variable, luego hacer el innerHTMl
- * 
- *
  */
 
 // ESTA FUNCION FETCH LLAMA AL JSON
@@ -75,7 +71,6 @@ const insertarRobot = async () => {
   tituloRobot.textContent = robots[indiceRobot][0].name;
   typeRobot.textContent = robots[indiceRobot][0].type;
   descriptionRobot.textContent = robots[indiceRobot][0].description;
-
 
   console.log(robots) // < -------------------- eliminar esto 
 };
@@ -140,7 +135,7 @@ const navegarIzquierda = async () => {
 const accederPerfilRobot = async () => {
   let robots = await getRobot();
   // history.pushState(null, "", "perfil-robot");
-  let perfilRobot = await cargarPagina("perfil-robot"); // llama a la pagina perfilRobot una vez que cargo puedo crear variables
+  let perfilRobot = await cargarPagina("perfil-robot"); // llama a perfilRobot una vez que cargo puedo crear variables
   main.innerHTML = perfilRobot; // y puedo insertar contenido
 
   let avatarRobot = document.getElementById("avatarRobot");
@@ -163,6 +158,8 @@ const accederPerfilRobot = async () => {
   obtenerDatosTabAdvices(robots);
   obtenerDatosTabDataSheet(robots);
   crearEventoTabs();  /** <------------ evento click sobre cada pestana */
+  contratarRobot()
+
 
   backBtn.addEventListener("click", async () => {
     // history.pushState(null, "", "home");
@@ -177,30 +174,64 @@ const accederPerfilRobot = async () => {
 
 //////////////////////////
 const crearFichaEstadisticas = (robots) => {
-  let avatarCarga = document.getElementById("avatarCarga");
+  let batteryLifeNumb = document.getElementById("batteryLifeNumb");
   let chargeTimeNumb = document.getElementById("chargeTimeNumb");
+  let robotStadistics = robots[indiceRobot][0].statistics[0];
 
-  avatarCarga.innerHTML =
-    robots[indiceRobot][0].statistics[0].other[0].batteryLife[0].value;
+  // avatarCarga.innerHTML = robotStadistics.other[0].batteryLife[0].value;
 
-  chargeTimeNumb.innerHTML =
-    robots[indiceRobot][0].statistics[0].other[0].chargeTime[0].value;
+  // chargeTimeNumb.innerHTML = robotStadistics.other[0].chargeTime[0].value;
 
   /** Guardo los valores de cada barra */
-  energy = robots[indiceRobot][0].statistics[0].energy[0];
-  maintenance = robots[indiceRobot][0].statistics[0].maintenance[0];
-  complexity = robots[indiceRobot][0].statistics[0].complexity[0];
-  security = robots[indiceRobot][0].statistics[0].security[0];
+  energy = robotStadistics.energy[0];
+  maintenance = robotStadistics.maintenance[0];
+  complexity = robotStadistics.complexity[0];
+  security = robotStadistics.security[0];
+  // batteryLife = robots
 
-  // para darle elcolor y % a cada barra
+  // para darle % a cada barra
   barBlue.style.width = `${energy.value}%`;
   barPink.style.width = `${maintenance.value}%`;
   barOrange.style.width = `${complexity.value}%`;
   barGreen.style.width = `${security.value}%`;
 
-insertarTooltip()
-
+  insertarTooltip()
+  recorrerCircleProgress(robotStadistics)
 };
+
+/** NO PODES SELECCIONAR UN SVG con document, AVERIGUAR COMO */
+// const batteryLifeCircle = document.querySelectorAll('.batteryLife');
+// console.log(batteryLifeCircle)
+// const bate = document.getElementById('bateria')
+// console.log(bate)
+// const svg = document.querySelectorAll('svg')
+// const arraySvg = Array.from(svg)
+// console.log(svg)
+// console.log(arraySvg)
+
+
+const circleProgress = document.querySelectorAll('circle');
+const arrayCircle = Array.from(circleProgress)
+  console.log(arrayCircle.length)
+
+const battery = document.getElementById('battery')
+console.log(battery)
+
+// batteryLifeCircle.style.strokeDashOffset = 'calc(310 - (310 * 60) / 100)';
+
+const recorrerCircleProgress = (robotStadistics) => {
+  const batteryValue = robotStadistics.other[0].batteryLife[0].value;
+  const chargeValue = robotStadistics.other[0].chargeTime[0].value;
+  
+  batteryLifeNumb.innerHTML = batteryValue;
+  chargeTimeNumb.innerHTML = chargeValue;
+
+//   const arrayCircleProgress = Array.from(circleProgress);
+//   console.log(arrayCircleProgress);
+//   let target = arrayCircleProgress;
+
+//     batteryLife.style.strokeDashoffset = `cal(310 - (310 * 60) / ${battery})`;
+}
 
 /** TABS / ficha tecnica / contenido estadisticas y consejos */
 
@@ -243,29 +274,22 @@ const removerClase = () => {
 }
 
 const insertarTooltip = () => {
-  // let perfil = await cargarPagina("perfil-robot");
-  const barItem = document.querySelectorAll('.bar__item')
-  
-  const arrayBarItem = Array.from(barItem)
-  console.log(arrayBarItem);
+  const barItem = document.querySelectorAll('.bar__item');
+  const arrayBarItem = Array.from(barItem);
 
   arrayBarItem.forEach((item) => {
     item.addEventListener('mouseenter', (e) => {
       switch(e.target.id){
       case "energyBar":
-          console.log("estas en la barra azul")
           crearTooltip(energy , barBlue);
         break;
         case "maintenanceBar":
-          console.log("estas en la barra rosa")
           crearTooltip(maintenance, barPink);
         break;
         case "complexBar":
-          console.log("estas en la barra naranja")
           crearTooltip(complexity, barOrange);
         break;
         case "securityBar":
-          console.log("estas en la barra verde")
           crearTooltip(security, barGreen);
         break;
         default:
@@ -323,19 +347,31 @@ const crearLiFicha = (robots) =>{
       dataAcc = data[0].accesorios[0].items,
       dataSize = data[0].size,
       dataItems = data[0].items;
-        
+  
   dataItems.forEach((item) => {
     listTable.innerHTML += `<li>${item}</li>`
   })
 
   dataAcc.forEach((item) => {
-    accesoriesList.innerHTML += `<li>${item} </li>`
+    accesoriesList.innerHTML += `<li>${item}</li>`
   })
   
   Object.entries(dataSize[0]).forEach(([key, value]) => {
     listSize.innerHTML += `<li>${(key + ': ' + value + ' cm')}</li>`
   })
 };
+
+
+const contratarRobot = (robots) =>{
+  const getRobotBtn = document.getElementById('getRobotBtn')
+
+  getRobotBtn.addEventListener('click', () => {
+    // let robots = await getRobot();
+    // let previewCart = await cargarPagina("preview"); // llama a perfilRobot una vez que cargo puedo crear variables
+    // main.innerHTML = previewCart; // y puedo insertar contenido
+    console.log('estas agregando un robot')
+  })
+}
 
 /* FIN FUNCIONES DE PERFIL ROBOT */
 
