@@ -67,12 +67,12 @@
                                                 
                                             <div class="text__circle">
                                                 <span>Uso máximo de 1 carga</span>
-                                                <span id="avatarCarga" class="number"></span>
+                                                <span id="batteryLifeNumb" class="number number__progress"></span>
                                                <span>HORAS</span>
                                             </div>
                                             <svg viewBox="0 0 100 100" xmlns="http://www.w3org/2000/svg" version="1.1"> 
                                                 <circle class="circle__main"cx="45" cy="45" r="40"></circle>
-                                                <circle class="progress__circle batteryLife"cx="45" cy="45" r="40"></circle>
+                                                <circle id="battery" class="progress__circle batteryLife"cx="45" cy="45" r="40"></circle>
                                                 <defs>
                                                     <linearGradient id="gradient1">
                                                         <stop offset="0%" stop-color="#7AD3FF" />
@@ -91,7 +91,7 @@
                                                 <span id="chargeTimeNumb" class="number"></span>
                                                 <span>MINUTOS</span>
                                         </div>
-                                        <svg viewBox="0 0 100 100" xmlns="http://www.w3org/2000/svg" version="1.1"> 
+                                        <svg id="svg" viewBox="0 0 100 100" xmlns="http://www.w3org/2000/svg" version="1.1"> 
                                             <circle class="circle__main"cx="45" cy="45" r="40"></circle>
                                             <circle class="progress__circle chargeTime"cx="45" cy="45" r="40"></circle>
                                             <defs>
@@ -150,7 +150,7 @@
 
     <div class="hire__robot section">
         <h3>¿Es lo que estás buscando?</h3>
-        <btn class=" btn fill__btn fill__blue">Contratar a Winston</btn>
+        <btn id="getRobotBtn" class=" btn fill__btn fill__blue">Contratar a Winston</btn>
     </div>
 
 </section>
