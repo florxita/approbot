@@ -66,7 +66,7 @@ p{
     font-weight: var(--fw-h4);
     text-align: center;
     cursor: pointer;
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 .fill__btn{
     border: none;
@@ -109,6 +109,9 @@ p{
     color: var(--yellow);
 }
 
+.dark__txt{
+    color: var(--contrastBlue);
+}
 /* ------------------------------- REUTILIZABLES FIN --------------------------------*/
 
 
@@ -323,7 +326,7 @@ p{
     text-align: center;
     background: var(--ultraContrastBlue);
     padding: 2rem;
-    border-radius: 1rem;
+    border-radius: 1.1rem;
     height: auto                                ;
 }
 
@@ -502,6 +505,7 @@ textarea{
     height: .8rem;
     background: var(--darkBlue);
     border-radius: 1rem;
+    transition: anim 1s ease-in;
 }
 
 #barBlue{
@@ -550,9 +554,9 @@ textarea{
     stroke: var(--darkBlue);
 }
 
-.progress__circle{
+/* .progress__circle{
     animation: anim 2s linear forwards;
-}
+} */
 
 svg{
     position: relative;
@@ -562,13 +566,16 @@ svg{
 
 /* Degradados y posicion circulos svg */
 .batteryLife{
-    stroke-dashoffset: calc(310 - (310 * 60) / 100);
+    /*stroke-dashoffset: calc(310 - (310 * 60) / 100); */
     stroke: url(#gradient1);
+    animation: gradient1 .5s linear forwards;
+
 }
 
 .chargeTime{
     stroke: url(#gradient2);
-    stroke-dashoffset: 170;
+    /* stroke-dashoffset: 170; */
+    animation: gradient2 .5s linear forwards;
 }
 
 /*Textos SVG*/
@@ -636,6 +643,20 @@ svg{
     }
     100%{
         opacity: 1;
+    }
+}
+
+
+@keyframes gradient1{
+    100%{
+        /* stroke-dashoffset:calc(310 - (310 * 60) / 100); */
+        stroke-dashoffset:140;
+}
+}
+
+@keyframes gradient2{
+    100%{
+        stroke-dashoffset:170;
     }
 }
 
@@ -798,4 +819,169 @@ svg{
 }
 .flex__active{
     display: flex;
+}
+
+/*****************************************************************/
+
+/** PREVIA ROBOT CARRITO 1**/
+
+.card, .plan__list, #payMethod{
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+    min-width: var(--minWidthCard);
+}
+
+.img__content__preview{
+    background:var(--orange);
+    background-image: url(/img/r1.png);
+    background-size: 130%;
+    background-position-y: 23%;
+    background-repeat: no-repeat;
+    width: 45%;
+    height: 5.5rem;
+    border-radius: 1rem 0 0 1rem;
+}
+
+#sectionPreviewCart  .title{
+    margin: 2rem 0 1rem;
+}
+
+.plan__list{
+    gap: .7rem;
+}
+
+.text__plan, .price__plan{
+    display: flex;
+    flex-direction: column;
+}
+
+.text__plan{
+    font-size: var(--s-h3); 
+    width: 55%;
+    padding-right: 2rem;
+    text-align: left;
+}
+
+.priceItemTotal{
+    font-size: 25px;
+    font-weight: var(--fw-h2);
+}
+.text__plan span, .priceItemMonth{
+    font-size: 11px;
+    font-weight: 100;
+}
+
+.preview__card .card__text span{
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.plan, .preview__card{
+    flex-direction: row;
+    padding: 1rem 2rem;
+    line-height: 1.5rem;
+    justify-content: space-around;
+    align-items: center;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.preview__card{
+    height: 5.5rem;
+    width: var(--minWidthCard);
+    background: var(--blueGradient);
+    gap: 2rem;
+    justify-content: stretch;
+    align-content: space-between;
+    padding: 0px;
+    margin: 0;
+}
+
+.price__plan{
+    text-align: right;
+}
+.pay__items{
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5rem;
+}
+
+.pay__items span{
+    width: 45px;
+    height: 45px;
+    background: var(--ultraContrastBlue);
+    border-radius: 20%;
+}
+
+#sectionPreviewCart a , #payMethod a{
+    margin-top: .75rem;
+    font-size: 12px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+#sectionPreviewCart button{
+    font-family: var(--principalTipo);
+    margin-left: 170px;
+    margin-top: 2rem;
+}
+
+#sectionPreviewCart button i {
+    margin-left: .4rem;
+    align-self: center;
+}
+#planList .plan:nth-child(2){
+    background: var(--greenGradient);
+}
+
+#planList .plan:nth-child(2) .text__plan span, .plan:nth-child(2) .priceItemMonth{
+   color: var(--contrastBlue);
+   font-size: var(--s-text);
+   font-weight: var(--fw-h4);
+   letter-spacing: 0px;
+}
+
+/********************************************************************/
+.body__light{
+    background: var(--lightGradient);
+}
+.container__404{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    align-items: center;
+    text-align: center;
+}
+
+.img__brazo__robot, .img__num404{
+    width: 270px;
+    height: auto;
+}
+
+.container__404 h2{
+    font-size: var(--s-h1);
+    font-weight: var(--fw-h1);
+}
+
+.container__404 .text, .container__404 a{
+    font-family: var(--optionalTipo);
+    font-size: var(--s-h4);
+    font-weight: var(--fw-h1);
+    width: 50%;
+}
+
+.text, .text h2{
+    margin: 1rem 0 ;
+}
+
+.link__back{
+    color: #fff;
+    transform: scale(1.5);
+}
+
+.link__back i{
+    margin-right: .5rem;
 }
